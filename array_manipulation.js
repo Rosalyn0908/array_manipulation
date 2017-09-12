@@ -17,5 +17,25 @@ $(function() {
 	);
 
 
+	// -- How to find the largest and smallest number in array --
+	my_array = [3, 4, 10, 5, -4, 6, 2, 7, 111, 8, 3];
+	$('.example_array:eq(1)').append(JSON.stringify(my_array, null, ' '));
+	var smallest = my_array[0];
+	var largest  = my_array[0];
+
+	for (var i = 0; i < my_array.length; i++) {
+		if ( my_array[i] < smallest ) {
+			smallest = my_array[i];
+		}
+		if ( my_array[i] > largest ) {
+			largest = my_array[i];
+		}
+	}
+
+	$('.solution_output:eq(1)').append(
+		'ANSWER: The smallest number is ' + smallest + ' and the largest is ' + largest
+	);
+
+
 
 });
