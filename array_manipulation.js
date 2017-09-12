@@ -37,5 +37,24 @@ $(function() {
 	);
 
 
+	// -- There is an array with every element duplicated except one. Find that element --
+	my_array = [4, 5, 2, 1, 1, 2, 3, 4, 5];
+	$('.example_array:eq(2)').append(JSON.stringify(my_array, null, ' '));
+	var elements_in_array = {};
+	var single_element;
+
+	for (var i = 0; i < my_array.length; i++) {
+		var element =  my_array[i].toString();
+		if ( ! elements_in_array[element] ) {
+			single_element = element;
+		}
+		elements_in_array[element] = true;
+	}
+
+	$('.solution_output:eq(2)').append(
+		'ANSWER: The element that is not repeated is the number ' + single_element
+	);
+
+
 
 });
