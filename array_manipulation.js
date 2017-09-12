@@ -83,5 +83,17 @@ $(function() {
 	);
 
 
+	// -- Reverse the order of an array in place --
+	my_array = [3, 12, 4, 10, 5, 8];
+	$('.example_array:eq(4)').append(JSON.stringify(my_array, null, ' '));
 
+	for (var i = 0; i < my_array.length/2; i++) {
+		var j = my_array[i];
+		my_array[i] = my_array[my_array.length - 1 - i];
+		my_array[my_array.length - 1 - i] = j;
+	}
+
+	$('.solution_output:eq(4)').append(
+		'ANSWER: The new array will look like this: ' + JSON.stringify(my_array, null, ' ')
+	);
 });
