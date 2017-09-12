@@ -1,0 +1,36 @@
+
+body {
+	font-family 	 : 'Josefin Sans', sans-serif;
+	color			 : #4CFC7E;
+	background-color : #2c333a;
+	margin 			 : 30px;
+}
+
+h1 {
+	font-family : 'Josefin slab', sans-serif;
+	font-weight : normal;
+	color 		: #58b9ef;
+}
+
+h2 {
+	font-family : 'Josefin Slab', sans-serif;
+	font-weight : normal;
+	color		: #637283;
+}
+
+h3 {
+	font-family : 'Josefin Sans', sans-serif;
+	font-weight : normal;
+}
+
+.solution_output {
+	padding : 5px 30px;
+	color   : #ff3377;
+}
+
+.example_array {
+	padding 	: 5px 30px;
+	color   	: #FFCB6B;
+	font-family : 'Anonymous Pro', sans-serif;
+	font-size 	: 18px;
+}
